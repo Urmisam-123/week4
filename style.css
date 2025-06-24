@@ -1,0 +1,144 @@
+:root {
+  --bg: #fffdf9;
+  --primary: #dbb0c2;
+  --accent: #a471a5;
+  --text: #2e2e2e;
+  --overlay: rgba(0, 0, 0, 0.45);
+  --font-head: 'Playfair Display', serif;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #fce9f5;
+}
+
+.logo {
+  height: 45px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.hero-overlay {
+  background: var(--overlay);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 2rem;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-family: var(--font-head);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.icon {
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.07);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: var(--font-head);
+  color: var(--primary);
+}
+
+.footer {
+  background: #fdebf3;
+  padding: 2rem;
+  text-align: center;
+}
